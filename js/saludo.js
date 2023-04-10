@@ -13,11 +13,11 @@ salutdo.textContent = 'Buenas noches';
 //Código para Consultor de aires acondicionados//
 const airesAcondicionados = [
     {
-      marca: "Samsung",
-      modelo: "AR18NVFSCWK",
+      marca: "Carrier",
+      modelo: "Absolut Filter",
       capacidad: "18.000 BTU",
-      precio: 1000,
-      descripcion: "Aire acondicionado Samsung con capacidad de 18.000 BTU. Viene con tecnología de enfriamiento rápido y un filtro de alta densidad para atrapar polvo y bacterias."
+      precio: 37000,
+      descripcion: "Aire acondicionado Carrier con capacidad de 18.000 BTU. Viene con tecnología de enfriamiento rápido y un filtro de alta densidad para atrapar polvo y bacterias."
     },
     {
       marca: "LG",
