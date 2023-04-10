@@ -1,0 +1,15 @@
+#menu {
+    width: 400px;
+    margin: 0 auto;
+    text-align: center;
+  }
+  
+  #info {
+    margin-bottom: 20px;
+  }
+  
+  #botones {
+    display: flex;
+    justify-content: space-between;
+  }
+  
