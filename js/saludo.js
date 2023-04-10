@@ -10,3 +10,13 @@ salutdo.textContent = 'Buenas tardes';
 if(hora >= 18 && hora < 24){
 salutdo.textContent = 'Buenas noches';
 };
+//Código para notificación//
+const toastTrigger = document.getElementById('liveToastBtn')
+const toastLiveExample = document.getElementById('liveToast')
+
+if (toastTrigger) {
+  const toastBootstrap = bootstrap.Toast.getOrCreateInstance(toastLiveExample)
+  toastTrigger.addEventListener('click', () => {
+    toastBootstrap.show()
+  })
+}
