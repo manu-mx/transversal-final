@@ -15,9 +15,11 @@ const airesAcondicionados = [
     {
       marca: "Carrier",
       modelo: "Absolut Filter",
-      capacidad: "18.000 BTU",
+      tipo: "Ventana",
+      temperatura: "Ambos",
       precio: 37000,
-      descripcion: "Aire acondicionado Carrier con capacidad de 18.000 BTU. Viene con tecnología de enfriamiento rápido y un filtro de alta densidad para atrapar polvo y bacterias."
+      eficiencia: "1.18918918918919E-02",
+      aguresidual: "4 Lts",
     },
     {
       marca: "LG",
@@ -42,7 +44,7 @@ const airesAcondicionados = [
     info.innerHTML = "";
     const aireAcondicionado = airesAcondicionados[indiceActual];
     const div = document.createElement("div");
-    div.innerHTML = `<h3>${aireAcondicionado.marca} ${aireAcondicionado.modelo}</h3><p><strong>Capacidad:</strong> ${aireAcondicionado.capacidad}</p><p><strong>Precio:</strong> $${aireAcondicionado.precio.toFixed(2)}</p><p><strong>Descripción:</strong> ${aireAcondicionado.descripcion}</p>`;
+    div.innerHTML = `<h3>${aireAcondicionado.marca} ${aireAcondicionado.modelo}</h3><p><strong>Tipo:</strong> ${aireAcondicionado.tipo}</p><p><strong>Precio:</strong> $${aireAcondicionado.precio.toFixed(2)}</p><p><strong>Agua residual:</strong> ${aireAcondicionado.aguresidual}</p>`;
     info.appendChild(div);
   }
   
