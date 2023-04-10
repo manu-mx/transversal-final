@@ -1,12 +1,9 @@
 #menu {
     margin: 0 auto;
     text-align: center;
-    border: 1px solid;
     padding: 50px;
     margin-left: 10%;
     margin-right: 10%;
-    background: black;
-    color: white;
   }
   
   #info {
