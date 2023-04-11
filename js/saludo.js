@@ -17,16 +17,36 @@ const airesAcondicionados = [
       modelo: "Absolut Filter",
       tipo: "Ventana",
       temperatura: "Ambos",
-      precio: 37000,
+      precio: "37,000",
       eficiencia: "1.18918918918919E-02",
       aguresidual: "4 Lts",
     },
     {
-      marca: "LG",
-      modelo: "VM242C6",
-      capacidad: "24.000 BTU",
-      precio: 1200,
-      descripcion: "Aire acondicionado LG con capacidad de 24.000 BTU. Viene con tecnología de enfriamiento rápido y un modo de ahorro de energía para reducir tus costos de electricidad."
+      marca: "Emerson",
+      modelo: "Silencioso kool",
+      tipo: "MiniSplit",
+      temperatura: "Ambos",
+      precio: "11,500",
+      eficiencia: "1.33333333333333E-02",
+      aguresidual: "2 Lts",
+    },
+    {
+      marca: "Freyven",
+      modelo: "Freyven Minisplit",
+      tipo: "MiniSplit",
+      temperatura: "Frío",
+      precio: "3,500",
+      eficiencia: "0.00475",
+      aguresidual: "3 Lts",
+    },
+    {
+      marca: "FRIKKO",
+      modelo: "Fit 17 2",
+      tipo: "MiniSplit",
+      temperatura: "Ambos",
+      precio: "22,579",
+      eficiencia: "0.011",
+      aguresidual: "4.5 Lts",
     },
     {
       marca: "Mitsubishi",
@@ -44,7 +64,7 @@ const airesAcondicionados = [
     info.innerHTML = "";
     const aireAcondicionado = airesAcondicionados[indiceActual];
     const div = document.createElement("div");
-    div.innerHTML = `<h3>${aireAcondicionado.marca} ${aireAcondicionado.modelo}</h3><p><strong>Tipo:</strong> ${aireAcondicionado.tipo}</p><p><strong>Temperatura:</strong> ${aireAcondicionado.temperatura}</p><p><strong>Precio:</strong> $${aireAcondicionado.precio.toFixed(2)}</p><p><strong>Eficiencia energética:</strong> ${aireAcondicionado.eficiencia}</p><p><strong>Agua residual:</strong> ${aireAcondicionado.aguresidual}</p>`;
+    div.innerHTML = `<h3>${aireAcondicionado.marca} ${aireAcondicionado.modelo}</h3><p><strong>Tipo:</strong> ${aireAcondicionado.tipo}</p><p><strong>Temperatura:</strong> ${aireAcondicionado.temperatura}</p><p><strong>Precio:</strong> $${aireAcondicionado.precio}</p><p><strong>Eficiencia energética:</strong> ${aireAcondicionado.eficiencia}</p><p><strong>Agua residual:</strong> ${aireAcondicionado.aguresidual}</p>`;
     info.appendChild(div);
   }
   
