@@ -201,7 +201,7 @@ const airesAcondicionados = [
     info.innerHTML = "";
     const aireAcondicionado = airesAcondicionados[indiceActual];
     const div = document.createElement("div");
-    div.innerHTML = `<h3>${aireAcondicionado.marca} ${aireAcondicionado.modelo}</h3><p><strong>Tipo:</strong> ${aireAcondicionado.tipo}</p><p><strong>Temperatura:</strong> ${aireAcondicionado.temperatura}</p><p><strong>Precio:</strong> $${aireAcondicionado.precio}</p><p><strong>Eficiencia energética:</strong> ${aireAcondicionado.eficiencia}</p><p><strong>Agua residual:</strong> ${aireAcondicionado.aguresidual}</p>`;
+    div.innerHTML = `<h3>${aireAcondicionado.marca} ${aireAcondicionado.modelo}</h3><p><strong>Tipo:</strong> ${aireAcondicionado.tipo}</p><p><strong>Temperatura:</strong> ${aireAcondicionado.temperatura}</p><p><strong>Precio:</strong> $${aireAcondicionado.precio}</p><p><strong>Eficiencia energética:</strong> ${aireAcondicionado.eficiencia}</p><p><strong>Agua residual/hora:</strong> ${aireAcondicionado.aguresidual}</p>`;
     info.appendChild(div);
   }
   
