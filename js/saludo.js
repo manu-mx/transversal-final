@@ -253,5 +253,5 @@ function previousPage() {
 }
 
 updatePageNumber(); // Llama a la función para actualizar el número de página inicialmente
-document.querySelector("button.btn btn-primary").addEventListener("click", nextPage);
-document.querySelector("button.btn btn-secondary").addEventListener("click", previousPage);
+document.getElementById("siguiente").addEventListener("click", nextPage);
+document.getElementById("anterior").addEventListener("click", previousPage);
