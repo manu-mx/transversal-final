@@ -225,4 +225,31 @@ const airesAcondicionados = [
   const anterior = document.getElementById("anterior");
   anterior.addEventListener("click", mostrarAnterior);
   
-  mostrarAireAcondicionado();  
+  mostrarAireAcondicionado(); 
+
+  //Código para mostrar el número de página o de avance en el consultor de climas//
+  var pageNumber = 1;
+var totalPages = 20; // Este valor puede variar dependiendo del número total de páginas
+
+function updatePageNumber() {
+  document.getElementById("page-number").textContent = pageNumber;
+  document.getElementById("total-pages").textContent = totalPages;
+}
+
+function nextPage() {
+  if (pageNumber < totalPages) {
+    pageNumber++;
+    updatePageNumber();
+    // Aquí puedes agregar más código para avanzar a la siguiente página
+  }
+}
+
+function previousPage() {
+  if (pageNumber > 1) {
+    pageNumber--;
+    updatePageNumber();
+    // Aquí puedes agregar más código para retroceder a la página anterior
+  }
+}
+
+updatePageNumber(); // Llama a la función para actualizar el número de página inicialmente

@@ -79,10 +79,15 @@
         <h2 style="margin-bottom: 20px; margin-top: 20px; text-align: center;">Información general:</h2>
         <div id="info"></div>
         <div id="botones">
-          <button id="anterior" class="btn btn-secondary">Anterior</button>
-          <button id="siguiente" class="btn btn-primary">Siguiente</button>
+          <button id="anterior" class="btn btn-secondary" onclick="previousPage()">Anterior</button>
+          <button id="siguiente" class="btn btn-primary" onclick="nextPage()">Siguiente</button>
         </div>
       </div>
+    </section>
+    <section>
+      <div>
+        <p>Estás en la página <span id="page-number">1</span> de <span id="total-pages">20</span>.</p>
+      </div>      
     </section>
     <section>
         <footer>
