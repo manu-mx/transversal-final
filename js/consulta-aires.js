@@ -228,7 +228,6 @@ function nextPage() {
   if (pageNumber < totalPages) {
     pageNumber++;
     updatePageNumber();
-    // Aquí puedes agregar más código para avanzar a la siguiente página
   }
 }
 
@@ -236,7 +235,6 @@ function previousPage() {
   if (pageNumber > 1) {
     pageNumber--;
     updatePageNumber();
-    // Aquí puedes agregar más código para retroceder a la página anterior
   }
 }
 
