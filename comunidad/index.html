@@ -74,13 +74,29 @@
     </section>
     <section style="display: grid; place-items: center;">
         <div>
-            <h1>Disponible próximamente</h1>
+            <h1>Sugerencias y comentarios</h1>
         </div>
         <div>
-            Espera a que terminemos de construir esta página para el sitio web.
-        </div>
-        <div>
-            <h4>En espera...</h4>
+          <form name="contact" method="POST" data-netlify="true">
+            <p>
+              <label>Su nombre: <input type="text" name="Nombre" /></label>
+            </p>
+            <p>
+              <label>Su Email: <input type="email" name="email" /></label>
+            </p>
+            <p>
+              <label>Su Rol: <select name="role[]" multiple>
+                <option value="visitante">Visitante</option>
+                <option value="follower">Seguidor</option>
+              </select></label>
+            </p>
+            <p>
+              <label>Mensaje: <textarea name="message"></textarea></label>
+            </p>
+            <p>
+              <button type="submit">Enviar</button>
+            </p>
+          </form>
         </div>
     </section>
     <section>
